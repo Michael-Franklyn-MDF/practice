@@ -1,6 +1,6 @@
-# Anti-Gravity Website
+# Portfolio Website
 
-A futuristic website for an anti-gravity technology company, built with the latest web technologies.
+A personal portfolio website showcasing my work and skills, built with the latest web technologies.
 
 ## Tech Stack
 
