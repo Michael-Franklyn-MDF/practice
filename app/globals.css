@@ -1,21 +1,32 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #18181b;
-  /* Zinc-900 */
   --muted: #f4f4f5;
-  /* Zinc-100 */
   --muted-foreground: #71717a;
-  /* Zinc-500 */
   --card: #ffffff;
   --card-foreground: #18181b;
   --border: #e4e4e7;
-  /* Zinc-200 */
-  --primary: #18181b;
-  /* Zinc-900 */
+  --primary: #2563eb;
   --primary-foreground: #fafafa;
-  /* Zinc-50 */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+  --card: #18181b;
+  --card-foreground: #fafafa;
+  --border: #27272a;
+  --primary: #3b82f6;
+  --primary-foreground: #fafafa;
 }
 
 @theme {
@@ -28,27 +39,13 @@
   --color-border: var(--border);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #09090b;
-    /* Zinc-950 */
-    --foreground: #fafafa;
-    /* Zinc-50 */
-    --muted: #27272a;
-    /* Zinc-800 */
-    --muted-foreground: #a1a1aa;
-    /* Zinc-400 */
-    --card: #09090b;
-    --card-foreground: #fafafa;
-    --border: #27272a;
-    /* Zinc-800 */
-    --primary: #fafafa;
-    --primary-foreground: #18181b;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,34 +54,4 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Minimalist Utilities */
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.link-underline {
-  position: relative;
-  text-decoration: none;
-}
-
-.link-underline::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.link-underline:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }

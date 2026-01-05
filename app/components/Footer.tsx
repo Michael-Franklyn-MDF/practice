@@ -1,17 +1,34 @@
-export default function Footer() {
+import { Github, Mail } from "lucide-react"
+
+export function Footer() {
+    const currentYear = new Date().getFullYear()
+
     return (
-        <footer className="border-t border-border mt-20">
-            <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
-                <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    © {new Date().getFullYear()} Franklyn. Built with Next.js & Tailwind CSS.
+        <footer className="py-8 border-t border-border bg-background">
+            <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p className="text-sm text-muted-foreground text-center md:text-left">
+                    &copy; {currentYear} Michael Franklyn. All rights reserved.
                 </p>
-                <div className="flex gap-4">
-                    {/* Placeholder for social links if needed later, kept text-only for minimal vibe */}
-                    <span className="text-sm text-muted-foreground">GitHub</span>
-                    <span className="text-sm text-muted-foreground">LinkedIn</span>
-                    <span className="text-sm text-muted-foreground">Twitter</span>
+
+                <div className="flex items-center gap-6">
+                    <a
+                        href="https://github.com/Michael-Franklyn-MDF"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label="GitHub"
+                    >
+                        <Github className="size-5" />
+                    </a>
+                    <a
+                        href="mailto:michkealfranklyn@gmail.com"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label="Email"
+                    >
+                        <Mail className="size-5" />
+                    </a>
                 </div>
             </div>
         </footer>
-    );
+    )
 }
