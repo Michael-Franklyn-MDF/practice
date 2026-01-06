@@ -6,18 +6,20 @@ interface ProjectCardProps {
     description: string
     technologies: string[]
     githubUrl: string
-    // imageUrl would go here
+    imageUrl: string
 }
 
-export function ProjectCard({ title, description, technologies, githubUrl }: ProjectCardProps) {
+export function ProjectCard({ title, description, technologies, githubUrl, imageUrl }: ProjectCardProps) {
     return (
         <div className="group bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
-            {/* Thumbnail Placeholder */}
+            {/* Project Image */}
             <div className="h-48 bg-muted relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60" />
-                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/30 font-bold text-lg group-hover:scale-110 transition-transform duration-500">
-                    {title} Preview
-                </div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60" /> */}
+                <img
+                    src={imageUrl}
+                    alt={`${title} Preview`}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
             </div>
 
             <div className="p-6 flex flex-col flex-grow">
