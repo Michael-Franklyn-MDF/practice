@@ -6,7 +6,7 @@ const projects = [
         description: "A simple yet elegant calculator application built with Python (CLI version) and HTML/CSS/JavaScript (Web version). Perfect for beginners learning programming fundamentals.",
         technologies: ["Python", "HTML", "CSS", "JavaScript"],
         githubUrl: "https://github.com/Michael-Franklyn-MDF/calculator",
-        imageUrl: "/project-calculator.png",
+        imageUrl: "/project-todo.png",
     },
     {
         title: "Coffe-e-Haven",
@@ -20,7 +20,7 @@ const projects = [
         description: "Minimalist to-do list application for organizing tasks and boosting productivity. Clean interface with essential task management features.",
         technologies: ["HTML", "CSS", "JavaScript"],
         githubUrl: "https://github.com/Michael-Franklyn-MDF/To-Do-List",
-        imageUrl: "/project-todo.png",
+        imageUrl: "/project-calculator.png",
     },
     {
         title: "Photography Portfolio",
