@@ -139,7 +139,7 @@ export function Hero() {
                             transition={{ delay: 0.3 }}
                             className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground"
                         >
-                            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">Michael Franklyn</span>
+                            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">Michael Franklyn</span>
                         </motion.h1>
 
                         <div className="h-16 md:h-20 flex items-center justify-center">
