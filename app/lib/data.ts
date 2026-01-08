@@ -4,6 +4,9 @@ export interface Project {
   tags: string[];
   link: string;
   year: string;
+  imageUrl: string;
+  flag: string;
+  themeColor: string; // HSL format, e.g., "150 50% 25%"
 }
 
 export interface Experience {
@@ -20,6 +23,9 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],
     link: "#",
     year: "2025",
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+    flag: "📊",
+    themeColor: "200 60% 35%", // Blue
   },
   {
     title: "Task Management App",
@@ -27,6 +33,9 @@ export const projects: Project[] = [
     tags: ["React", "Redux", "Node.js", "PostgreSQL"],
     link: "#",
     year: "2024",
+    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=80",
+    flag: "✅",
+    themeColor: "150 50% 30%", // Green
   },
   {
     title: "AI Content Generator",
@@ -34,6 +43,9 @@ export const projects: Project[] = [
     tags: ["Vue.js", "OpenAI API", "Nuxt"],
     link: "#",
     year: "2024",
+    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=80",
+    flag: "🤖",
+    themeColor: "250 50% 30%", // Purple
   },
   {
     title: "Architectural Portfolio",
@@ -41,6 +53,9 @@ export const projects: Project[] = [
     tags: ["Svelte", "Netlify", "CMS"],
     link: "#",
     year: "2023",
+    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&auto=format&fit=crop&q=80",
+    flag: "🏛️",
+    themeColor: "30 60% 40%", // Orange
   },
 ];
 

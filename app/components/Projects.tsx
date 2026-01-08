@@ -1,35 +1,5 @@
-import { ProjectCard } from "./ProjectCard"
-
-const projects = [
-    {
-        title: "Calculator",
-        description: "A simple yet elegant calculator application built with Python (CLI version) and HTML/CSS/JavaScript (Web version). Perfect for beginners learning programming fundamentals.",
-        technologies: ["Python", "HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Michael-Franklyn-MDF/calculator",
-        imageUrl: "/project-todo.png",
-    },
-    {
-        title: "Coffe-e-Haven",
-        description: "A modern, responsive digital menu website template designed for coffee shops and cafés. Enhances customer experience, reduces printed materials, and provides 24/7 menu accessibility.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Michael-Franklyn-MDF/Coffe-e-Haven",
-        imageUrl: "/project-coffee.png",
-    },
-    {
-        title: "To-Do List",
-        description: "Minimalist to-do list application for organizing tasks and boosting productivity. Clean interface with essential task management features.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Michael-Franklyn-MDF/To-Do-List",
-        imageUrl: "/project-calculator.png",
-    },
-    {
-        title: "Photography Portfolio",
-        description: "A modern, visually captivating photography portfolio showcasing favorite images, stories, and the creative journey of Michael David Franklyn.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Michael-Franklyn-MDF/Photography",
-        imageUrl: "/project-photography.png",
-    },
-]
+import { DestinationCard } from "@/components/ui/card-21"
+import { projects } from "../lib/data"
 
 export function Projects() {
     return (
@@ -42,13 +12,18 @@ export function Projects() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-10">
-                    {projects.map((project, index) => (
-                        <ProjectCard
-                            key={index}
-                            index={index}
-                            {...project}
-                        />
+                <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                    {projects.map((project) => (
+                        <div key={project.title} className="w-full max-w-[320px] h-[450px]">
+                            <DestinationCard
+                                imageUrl={project.imageUrl}
+                                location={project.title}
+                                flag={project.flag}
+                                stats={`${project.tags.length} Technologies • ${project.year}`}
+                                href={project.link}
+                                themeColor={project.themeColor}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
