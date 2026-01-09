@@ -18,44 +18,44 @@ export interface Experience {
 
 export const projects: Project[] = [
   {
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers, featuring real-time data visualization and inventory management.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Recharts"],
-    link: "#",
-    year: "2025",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
-    flag: "📊",
-    themeColor: "200 60% 35%", // Blue
+    title: "Calculator",
+    description: "A simple yet elegant calculator application built with Python (CLI version) and HTML/CSS/JavaScript (Web version). Perfect for beginners learning programming fundamentals.",
+    tags: ["Python", "HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Michael-Franklyn-MDF/calculator",
+    year: "2024",
+    imageUrl: "/project-todo.png",
+    flag: "🔢",
+    themeColor: "280 60% 35%", // Purple/Violet
   },
   {
-    title: "Task Management App",
-    description: "A minimalist productivity tool focused on deep work and distraction-free task tracking.",
-    tags: ["React", "Redux", "Node.js", "PostgreSQL"],
-    link: "#",
+    title: "Coffe-e-Haven",
+    description: "A modern, responsive digital menu website template designed for coffee shops and cafés. Enhances customer experience, reduces printed materials, and provides 24/7 menu accessibility.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Michael-Franklyn-MDF/Coffe-e-Haven",
     year: "2024",
-    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=80",
+    imageUrl: "/project-coffee.png",
+    flag: "☕",
+    themeColor: "30 50% 30%", // Coffee Brown
+  },
+  {
+    title: "To-Do List",
+    description: "Minimalist to-do list application for organizing tasks and boosting productivity. Clean interface with essential task management features.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Michael-Franklyn-MDF/To-Do-List",
+    year: "2024",
+    imageUrl: "/project-calculator.png",
     flag: "✅",
     themeColor: "150 50% 30%", // Green
   },
   {
-    title: "AI Content Generator",
-    description: "An interface for generating marketing copy using large language models, with a focus on ease of use.",
-    tags: ["Vue.js", "OpenAI API", "Nuxt"],
-    link: "#",
+    title: "Photography Portfolio",
+    description: "A modern, visually captivating photography portfolio showcasing favorite images, stories, and the creative journey of Michael David Franklyn.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Michael-Franklyn-MDF/Photography",
     year: "2024",
-    imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=80",
-    flag: "🤖",
-    themeColor: "250 50% 30%", // Purple
-  },
-  {
-    title: "Architectural Portfolio",
-    description: "A highly visual portfolio website for a boutique architecture firm, emphasizing imagery and typography.",
-    tags: ["Svelte", "Netlify", "CMS"],
-    link: "#",
-    year: "2023",
-    imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&auto=format&fit=crop&q=80",
-    flag: "🏛️",
-    themeColor: "30 60% 40%", // Orange
+    imageUrl: "/project-photography.png",
+    flag: "📸",
+    themeColor: "200 60% 35%", // Blue
   },
 ];
 
